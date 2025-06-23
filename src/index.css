@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Times New Roman';
+}
+html, body{
+height: 100%;
+width: 100%;
+background-color: #000;
+color: #fff;
+overflow: hidden;
+}
+
+input:-webkit-autofill {
+  background-color: rgb(238, 250, 247) !important; /* Override yellow */
+  color: yellow !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(237, 250, 246)  inset !important; /* Trick to change background */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent flickering */
+}
+
+#btn:hover{
+  background-color: #059690;
+}
+
+#tasklist::-webkit-scrollbar{
+  display: none;
+}
+
+#allTask::-webkit-scrollbar{
+  display: none;
+}
+
+.scrollbar::-webkit-scrollbar{
+  display: none;
+}
